@@ -2,6 +2,9 @@ Body {
   position: relative;
   overflow-y: scroll;
 }
+.navigation-link-container {
+bottom: -10rem;
+}
 
 .project-container {
   width: 100%;
