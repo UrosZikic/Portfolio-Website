@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: poppins, arial, sans-serif;
+  color: #212529;
+}
+
+body {
+  /* pushes header below nav (nav is fixed) */
+  padding-top: 7rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  /* general font styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../images/2.jpg");
+  color: #fff;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.9rem;
+}
+a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.icon {
+  /* default icon font size */
+  font-size: 2.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+ion-icon {
+  cursor: pointer;
+}
+.rotate {
+  font-size: 2rem;
+  letter-spacing: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(720deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

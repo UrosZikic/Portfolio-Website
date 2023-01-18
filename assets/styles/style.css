@@ -1,0 +1,202 @@
+.navigation {
+  /* position */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 7rem;
+  /* decoration */
+  background-color: black;
+  /* children will inherit */
+  color: #f1f3f5;
+
+  /* display */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  overflow: hidden;
+  z-index: 1;
+}
+
+.navigation-icon {
+  font-size: 4rem;
+}
+/* come back to this for js */
+.navigation-link-container {
+  z-index: 999;
+  /* position */
+  position: absolute;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: -1rem;
+  /* display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* decoration */
+  background-color: white;
+  opacity: 0.9;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+.navigation-link {
+  color: black;
+  font-size: 3rem;
+  transition: all 1s;
+}
+.navigation-link:hover {
+  font-size: 6rem;
+  border-bottom: 1px solid black;
+}
+.closeMenu-icon {
+  font-size: 5rem;
+  position: absolute;
+  right: 5rem;
+  top: 5rem;
+  color: black;
+}
+
+/* part of navigation logo */
+strong {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: -1.6rem;
+}
+.testZ {
+  transform: rotate(90deg);
+  position: relative;
+}
+.testZ strong {
+  position: absolute;
+  left: -16px;
+  top: -4px;
+  font-size: 7rem;
+}
+.myLogo {
+  transition: transform 2s;
+}
+
+.myLogo:hover {
+  transform: rotateX(360deg);
+}
+/* ********************** */
+
+/* header section */
+.header-section {
+  max-width: 100rem;
+  margin: 10rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.first--header-block {
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+}
+.first--header-info {
+  /* main-block-space */
+  flex: 3;
+  /* display */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1rem;
+}
+.link--b-border {
+  border-bottom: 2px solid white;
+}
+.smaller--screen-adapt {
+  display: none;
+  border-bottom: 2px solid white;
+}
+
+/* cards */
+.card-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 30rem;
+  height: 20rem;
+  border: none;
+  perspective: 100rem; /* Remove this if you don't want the 3D effect */
+  opacity: 1;
+  transform: translateX(-650%);
+  transition: all 1s;
+}
+/* .first--flip-pair,
+.second--flip-pair {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+} */
+
+.flip-card:hover .myLogo {
+  transform: rotate(720deg);
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.close-work {
+  display: none;
+}
+
+.adjustLogo {
+  position: absolute;
+  left: 44%;
+  top: 30%;
+}
+.portfolioImg {
+  width: 100%;
+  height: 100%;
+  /* filter: brightness(50%); */
+}

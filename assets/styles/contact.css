@@ -1,0 +1,21 @@
+.section-contact {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.section-contact strong {
+  letter-spacing: 0;
+  display: block;
+  font-size: 2rem;
+  margin: 1rem;
+}
+h2 {
+  margin-top: 20rem;
+  text-align: center;
+}
+.icon {
+  font-size: 4rem;
+}

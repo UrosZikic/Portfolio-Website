@@ -1,0 +1,48 @@
+body {
+  overflow-y: visible;
+}
+
+.section-about {
+  max-width: 120rem;
+  margin: 10rem auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+h2 {
+  border-bottom: 1px solid white;
+  font-size: 5rem;
+}
+ion-icon,
+a {
+  vertical-align: middle;
+}
+
+ul,
+li {
+  font-size: 2rem;
+  list-style: square;
+}
+
+.section-about img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+}
+.skills-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+}
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+}
+
+.resume-link {
+  align-self: flex-start;
+  justify-self: flex-start;
+}

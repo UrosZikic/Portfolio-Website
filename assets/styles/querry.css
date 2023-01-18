@@ -1,0 +1,90 @@
+@media (max-width: 49em) {
+  .section-about {
+    flex-direction: column;
+  }
+}
+@media (max-width: 48em) {
+  /* .card-holder {
+    flex-direction: column;
+  } */
+  .project-container {
+    flex-direction: column;
+  }
+  .project-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 41em) {
+  .smaller--screen-adapt {
+    display: inline-block;
+  }
+  .sm-disappear {
+    display: none;
+  }
+  .sm-appear {
+    display: inline-block;
+  }
+  .card-holder {
+    display: none;
+  }
+}
+
+@media (max-width: 35em) {
+  .skills-list ul,
+  .skills-list li {
+    font-size: 1.4rem;
+  }
+  .resume-link {
+    font-size: 1.8rem;
+  }
+  .section-about p {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 32em) {
+  .section-contact {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .skills-block {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .resume-link {
+    align-self: center;
+  }
+  .inner--project-info {
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 23em) {
+  .rotate {
+    font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+  .section-contact strong {
+    font-size: 1.5rem;
+  }
+  .section-about p {
+    font-size: 1.55rem;
+  }
+  .first--header-description {
+    font-size: 1.6rem;
+  }
+  .flip-card {
+    width: 27rem;
+    height: 18rem;
+  }
+  .project {
+    padding-top: 12rem;
+  }
+  .inner--project-info {
+    flex-direction: column;
+  }
+  .left--project-part {
+    align-self: flex-start;
+  }
+}
