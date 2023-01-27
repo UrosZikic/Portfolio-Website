@@ -58,6 +58,12 @@
   .inner--project-info {
     gap: 0rem;
   }
+    .inner--project-info {
+    flex-direction: column;
+  }
+  .left--project-part {
+    align-self: flex-start;
+  }
 }
 
 @media (max-width: 23em) {
@@ -81,10 +87,5 @@
   .project {
     padding-top: 12rem;
   }
-  .inner--project-info {
-    flex-direction: column;
-  }
-  .left--project-part {
-    align-self: flex-start;
-  }
+
 }
