@@ -22,6 +22,7 @@ h2 {
   flex-direction: column;
   gap: 1rem;
   transform: scale(1);
+  cursor: pointer;
 }
 .flip-card {
   transform: translate(0%);
