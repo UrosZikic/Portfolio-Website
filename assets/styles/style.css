@@ -110,6 +110,8 @@ strong {
   align-items: center;
   gap: 3rem;
   padding: 1rem;
+  transform: translateY(70%);
+  transition: all 1s;
 }
 .link--b-border {
   border-bottom: 2px solid white;
